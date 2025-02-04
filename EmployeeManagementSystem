@@ -1,0 +1,17 @@
+package employeemanagementsystem;
+
+public class EmployeeManagementSystem {
+
+    public static void main(String[] args) {
+            Employee emp1 = new Employee("Naldrelle Yuan Briones", 96712, "Engineering Dept.", 100000);
+            Employee emp2 = new Employee("Michaela Jane Mando", 18045, "Engineering Dept.", 45000);
+            Employee emp3 = new Employee("Lorie Mae Manait", 85647, "Engineering Dept.", 290000);
+            Employee emp4 = new Employee("Frenz Dominic Cartajena", 69420, "Engineering Dept.", 69420);
+            
+            emp1.displayEmployeeInfo();
+            emp2.displayEmployeeInfo();
+            emp3.displayEmployeeInfo();
+            emp4.displayEmployeeInfo();
+    }
+    
+}
