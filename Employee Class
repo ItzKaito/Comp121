@@ -1,0 +1,41 @@
+package employeemanagementsystem;
+
+public class Employee {
+    String name;
+    String department;
+    int employeeId;
+    double monthlySalary;
+    
+    Employee() {
+        this.name = "Unknown";
+        this.employeeId = 0;
+        this.department = "None.";
+        this.monthlySalary = 0.0;
+}
+    Employee(String name, int employeeId, String department, double monthlySalary) {
+        this.name = name;
+        this.employeeId = employeeId;
+        this.department = department;
+        this.monthlySalary = monthlySalary;
+    }
+    
+    void displayEmployeeInfo() {
+        System.out.println("Employee Information:"
+                + "\nName: " + name
+                + "\nDepartment: " + department
+                + "\nMonthly Salary: ₱" + monthlySalary
+                + "\nAnnual Salary: ₱" + monthlySalary
+                + "\n-------------------------------------------");
+    }
+    
+    double calculateAnnualSalary(){
+        return monthlySalary * 12;
+    }
+    
+    String getName(){
+        return name;
+    }
+    
+    
+    
+}
